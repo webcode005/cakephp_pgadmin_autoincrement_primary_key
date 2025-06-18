@@ -1,0 +1,14 @@
+-- Table: registration.license_list_log
+
+	
+	CREATE SEQUENCE registration.license_list_log_id_seq START 1;
+
+
+ALTER TABLE registration.license_list_log
+ALTER COLUMN id SET DEFAULT nextval('registration.license_list_log_id_seq');
+
+-- Table: registration.license_log
+CREATE SEQUENCE registration.license_log_id_seq START 1;
+
+ALTER TABLE registration.license_log
+ALTER COLUMN id SET DEFAULT nextval('registration.license_log_id_seq');
